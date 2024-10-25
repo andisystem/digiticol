@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digiticol - Diseño y Tecnología</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header con logo y menú -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo de Digiticol">
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <div class="close" id="close">&times;</div>
+            <ul id="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Nuestros Servicios</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#proyectos">Nuestros Proyectos</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Inicio con video de fondo -->
+    <section id="inicio" class="banner">
+        <video autoplay muted loop id="bg-video">
+            <source src="video-fondo.mp4" type="video/mp4">
+        </video>
+        <div class="banner-content">
+            <h1>Hola, Somos Digiticol</h1>
+            <h2>Tecnología, Estrategia y Conciencia en acción</h2>
+            <p>Somos una agencia de diseño, marketing y tecnología que ofrece consultoría y asesoría personalizada, brindando soluciones creativas y tecnológicas a la vanguardia para tu negocio.</p>
+        </div>
+    </section>
+
+    <!-- Sección Descargas -->
+    <section id="descargas" class="parallax-section">
+        <h2>Conoce nuestro portafolio de servicios</h2>
+        <div class="downloads">
+            <div class="download-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGAA4Wd4bco5Xv33GasXrnDdQT5OFXwa3HUQ&s" alt="PDF Icon">
+                <a href="portafolio-general.pdf" download>Link General</a>
+            </div>
+            <div class="download-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGAA4Wd4bco5Xv33GasXrnDdQT5OFXwa3HUQ&s" alt="PDF Icon">
+                <a href="diseno-marketing.pdf" download>Link Diseño y Marketing</a>
+            </div>
+            <div class="download-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGAA4Wd4bco5Xv33GasXrnDdQT5OFXwa3HUQ&s" alt="PDF Icon">
+                <a href="soluciones-tecnologicas.pdf" download>Link Soluciones Tecnológicas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nuestros Servicios -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <p>En Digiticol, fusionamos Tecnologías de la Información con innovación estratégica y conciencia, redefiniendo el futuro con soluciones transformadoras y sostenibles.</p>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/17364/17364865.png" alt="Innovación Digital">
+                <h3>Innovación Digital</h3>
+                <p>Transformamos ideas en realidades digitales: tu socio en innovación y tecnología.</p>
+                <a href="#">Visitar página Innovación digital</a>
+            </div>
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/2720/2720691.png" alt="Estrategia Digital">
+                <h3>Estrategia Digital</h3>
+                <p>Domina tu mercado con nuestra estrategia digital integral y efectiva.</p>
+                <a href="#">Visitar página Estrategia digital</a>
+            </div>
+            <div class="grid-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/6323/6323225.png" alt="Conciencia Digital">
+                <h3>Conciencia Digital</h3>
+                <p>Despierta tu conciencia digital con campañas innovadoras y experiencias transformadoras.</p>
+                <a href="#">Visitar página Conciencia digital</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos con parallax -->
+    <section class="quienes-somos" id="quienes-somos">
+        <div class="contenido">
+            <p>Somos Digiticol, tu aliado en soluciones tecnológicas y creativas. Nuestro apasionado equipo de profesionales ofrece consultoría y asesoría personalizada para tu negocio. Con un enfoque integral, abarcamos hardware y software, diseño gráfico y multimedia, desarrollo web, estrategias de branding y marketing digital, así como personalización de aplicaciones web y móviles.</p>
+            
+            <button id="verMasBtn" onclick="toggleContenido()">Ver más</button>
+    
+            <div id="contenidoExpandido" class="contenido-expandido">
+                <p>Nos destacamos por fusionar innovación tecnológica con creatividad artística, trabajando desde la conceptualización hasta la implementación para crear experiencias excepcionales y soluciones efectivas.</p>
+                <p>Nuestra misión es ayudarte a prosperar en un mundo digital en constante cambio. Ya sea que busques impulsar tu marca, mejorar la eficiencia de tus operaciones o llegar a nuevos mercados, estamos aquí para ofrecerte resultados medibles y tangibles.</p>
+                <ul>
+                    <li>Consultoría y asesoría personalizada para identificar y satisfacer tus necesidades.</li>
+                    <li>Soluciones de hardware y software adaptadas a tus requerimientos específicos.</li>
+                    <li>Diseño gráfico y multimedia que captura y refleja la esencia de tu marca.</li>
+                    <li>Desarrollo de sitios web y aplicaciones móviles innovadoras y funcionales.</li>
+                    <li>Estrategias de branding que te diferencian y conectan emocionalmente con tu audiencia.</li>
+                    <li>Marketing digital que potencia tu crecimiento y visibilidad en el mercado.</li>
+                    <li>Personalización de aplicaciones web y móviles para una experiencia única del usuario.</li>
+                </ul>
+                <p class="cta">¡<strong>Comencemos a trabajar juntos hoy mismo y descubre lo que podemos lograr juntos!</strong></p>
+            </div>
+        </div>
+    
+        <div class="imagen-parallax">
+            <div class="parallax fondo"></div>
+            <div class="parallax nube"></div>
+            <div class="parallax maquinas"></div>
+        </div>
+    </section>    
+
+    <!-- Sección Nuestro Equipo -->
+    <section class="nuestro-equipo">
+        <h2>Conoce al equipo Digiticol</h2>
+        
+        <div class="equipo-grid">
+            <!-- Grid 1: Andrés Rodríguez -->
+            <div class="equipo-miembro">
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQFbLGnA2k_VEQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1667028986649?e=1735171200&v=beta&t=vhayBBDeyETIJtQTVJxfRKXjTJrqUaVZaZ-pzuptbDI" alt="Andrés Rodríguez">
+                <h3>Andrés Rodríguez</h3>
+                <h4>Director de Proyectos</h4>
+                <p>Experto en diseño gráfico, innovación tecnológica y capacidad para solucionar problemas de índole digital y tecnológico.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" class="icon-facebook">Facebook</a>
+                    <a href="https://linkedin.com" target="_blank" class="icon-linkedin">LinkedIn</a>
+                    <a href="https://instagram.com" target="_blank" class="icon-instagram">Instagram</a>
+                    <a href="https://wa.me/numero" target="_blank" class="icon-whatsapp">WhatsApp</a>
+                </div>
+            </div>
+    
+            <!-- Grid 2: Germán Rendón -->
+            <div class="equipo-miembro">
+                <img src="https://media.licdn.com/dms/image/v2/D4E35AQFppBUP6EIBnw/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1719440421116?e=1730440800&v=beta&t=cVxkTJFl4vfLAZ2mSRLAyqvqHZVb7jWWXS4-2oxNZMg" alt="Germán Rendón">
+                <h3>Germán Rendón</h3>
+                <h4>Director de Tecnología</h4>
+                <p>Experto en diseño y desarrollo web con amplios conocimientos en soluciones tecnológicas y plataformas CMS como WordPress, lenguajes de programación y bases de datos para los servidores.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" class="icon-facebook">Facebook</a>
+                    <a href="https://linkedin.com" target="_blank" class="icon-linkedin">LinkedIn</a>
+                    <a href="https://instagram.com" target="_blank" class="icon-instagram">Instagram</a>
+                    <a href="https://wa.me/numero" target="_blank" class="icon-whatsapp">WhatsApp</a>
+                </div>
+            </div>
+    
+            <!-- Grid 3: Carlos Andrés Cardona -->
+            <div class="equipo-miembro">
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQEnwf5o2MD8JQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1668719570293?e=1735171200&v=beta&t=jtC3KtxmrlunGiGX5LCsSAOpyMdF-kWf1QWNhJuX0qc" alt="Carlos Andrés Cardona">
+                <h3>Carlos Andrés Cardona</h3>
+                <h4>Director Operativo</h4>
+                <p>Diseñador gráfico especializado en creación de contenidos multimedia y branding.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" class="icon-facebook">Facebook</a>
+                    <a href="https://linkedin.com" target="_blank" class="icon-linkedin">LinkedIn</a>
+                    <a href="https://instagram.com" target="_blank" class="icon-instagram">Instagram</a>
+                    <a href="https://wa.me/numero" target="_blank" class="icon-whatsapp">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Sección Nuestros Proyectos -->
+    <section class="nuestros-proyectos" id="proyectos">
+        <h2>Conoce nuestros proyectos</h2>
+        
+        <div class="proyectos-grid">
+            <div class="proyecto-item">
+                <img src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/e2a17e0df8a1eaa163cbe8a900bbf253-1616001112339/Que%20es%20branding-main.jpg" alt="Identidad de Marca">
+                <h3>Identidad de Marca</h3>
+            </div>
+            
+            <div class="proyecto-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsz0OefuvfzvqCQqsLkJpVLwGrwErdcIh_Sw&s" alt="Diseño Publicitario">
+                <h3>Diseño Publicitario</h3>
+            </div>
+    
+            <div class="proyecto-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDzOnda5R6ZYg3s7EcweaB4SAOwddQoH2xmg&s" alt="Ilustración">
+                <h3>Ilustración</h3>
+            </div>
+    
+            <div class="proyecto-item">
+                <img src="https://img.freepik.com/vector-gratis/vector-degradado-logotipo-colorido-pajaro_343694-1365.jpg" alt="Diseño de Logotipos">
+                <h3>Diseño de Logotipos</h3>
+            </div>
+    
+            <div class="proyecto-item">
+                <img src="https://www.sgstechnologies.net/sites/default/files/2021-08/future-webdesign.jpg" alt="Diseño y Desarrollo Web">
+                <h3>Diseño y Desarrollo Web</h3>
+            </div>
+    
+            <div class="proyecto-item">
+                <img src="https://definicion.de/wp-content/uploads/2011/11/planimetria-1.jpg" alt="Planimetría">
+                <h3>Planimetría</h3>
+            </div>
+    
+            <div class="proyecto-item">
+                <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/172587006/original/6d4aac56ca4bc7454cf74971c660053efd40d259/diseno-creativo-de-rrss-anuncios-publicitarios-2e01.png" alt="Diseño de Piezas RRSS">
+                <h3>Diseño de Piezas RRSS</h3>
+            </div>
+    
+            <div class="proyecto-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgM-uEmXLYFInH4Hz2WtmI8_0EUhTBF_i3PQ&s" alt="Ilustración Digital">
+                <h3>Ilustración Digital</h3>
+            </div>
+    
+            <div class="proyecto-item">
+                <img src="https://blog.mantra.mx/hs-fs/hubfs/Diferencias-entre-2d-y-3d.jpg?width=1110&height=720&name=Diferencias-entre-2d-y-3d.jpg" alt="Producción Audiovisual">
+                <h3>Producción Audiovisual</h3>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Sección de Clientes con efecto hover -->
+    <section class="clientes">
+        <h1>Confían en nosotros</h1>
+        <div class="clientes-logos">
+            <img src="https://aplicaciones.epm.com.co/pqrs/assets/images/logo.png" alt="EPM">
+            <img src="ruta_logo_laza_abogados.jpg" alt="Laza Abogados Asociados">
+            <img src="https://i0.wp.com/universaldecauchos.com/wp-content/uploads/2022/01/unnamed.png?ssl=1" alt="Petroworks">
+            <img src="https://www.univercity.com.co/demo/univercity/wp-content/uploads/2024/04/cropped-logo-univercity-300x58.png" alt="UniverCity">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYvE3XhEv8Nipqz10YaNpFm0jA2i9IW4yxoQ&s" alt="Empanadas la Unión">
+            <img src="https://hectormartinezluna.info/wp-content/uploads/2023/09/banner_nuevo_hml.jpg" alt="Hector Martínez Luna">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxsSAWVehDYb-tMKyg8U3t3b8L3eTUgQNU5g&s" alt="Fundación Bugarte">
+            <img src="ruta_logo_camcomputo.jpg" alt="CamCómputo">
+            <img src="ruta_logo_grupo_koneko.jpg" alt="Grupo Koneko">
+            <img src="https://static.wixstatic.com/media/ad82ef_51caddfd26284877a57df03d7b2da7f5~mv2.png/v1/crop/x_68,y_128,w_362,h_174/fill/w_500,h_240,al_c,lg_1,q_85,enc_auto/Logo%20House%20Koneko%20(4).png" alt="House Koneko">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbgA8uwnnqSNxIACW75eEKUP5RmKk0XfPg9A&s" alt="Limpiamar MC">
+            <img src="https://www.paulmaric.com/wp-content/uploads/2020/11/CarExpert_Logo_Red-1024x269.png" alt="Cars Expert">
+            <img src="https://fajasguitarcurves.com/cdn/shop/files/logo-guitar.png?height=628&pad_color=ffffff&v=1727377793&width=1200" alt="Guitar Curves Fajas">
+            <img src="ruta_logo_zona_alfa.jpg" alt="Zona Alfa">
+            <img src="ruta_logo_theos_coffee.jpg" alt="Theos Coffee">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Cv-DZnF2xaVC4p0H5md1tgqU_6kIIBH-_A&s" alt="Theos Cacao">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStzBbWhF5icxet3SjWyGEXJguXAPcGt_PetQ&s" alt="Mira Ve">
+            <img src="https://imperialcity.com.mx/wp-content/uploads/2024/08/isotipo.png" alt="Imperial City">
+            <img src="https://www.wcsj.org/images/Logo-ParqueExplora-Negro.png" alt="Parque Explora Medellín">
+            <img src="https://adecocolombia.org/wp-content/uploads/2023/08/Logo_Adeco.jpg" alt="Adeco">
+            <img src="https://canalpozuelo.es/wp-content/uploads/2024/07/Canal-Pozuelo-300x159.jpg" alt="Canal Pozuelo">
+        </div>
+    </section>
+    
+    <!-- Sección de Partners y proveedores -->
+    <section class="clientes">
+        <h1>Nuestros Aliados</h1>
+        <div class="clientes-logos">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EtdY91NSwdxAn4OkgU6R7Aahb1ppCsKcDw&s" alt="Rentame Web">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/SiteGround.Com_Inc._Logo.png" alt="Siteground">
+            <img src="https://download.logo.wine/logo/Microsoft/Microsoft-Logo.wine.png" alt="Microsoft">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Hotmart_logo.svg" alt="Hotmart">
+            <img src="https://project.buildnator.com/wp-content/uploads/2024/04/cropped-LOGOTIPO-BUILDNATOR.png" alt="Buildnator">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxH2_qUm8AHhM23MtpKPR3qyQY1YFDO8GMjg&s" alt="Gintic">
+            <img src="https://multimedia-nivelics-prod.s3.amazonaws.com/multimediaStrapi/logo_light_slogan_639cbc2c59.png" alt="Nivelics">
+        </div>
+    </section> 
+
+    <!-- Sección Blog -->
+    <section class="blog" id="blog">
+        <h1>Explora nuestro blog: Estrategia, Innovación y Conciencia Digital</h1>
+        <p>Descubre nuestros artículos más recientes y sumérgete en el mundo de la estrategia digital, la innovación tecnológica y la conciencia digital. Cada entrada está diseñada para ofrecerte valiosos insights y prácticas recomendadas que impulsarán tu negocio al siguiente nivel.</p>
+        <div class="blog-grid">
+            <div class="blog-item">
+                <div class="blog-info">
+                    <span class="date">Fecha: 10/10/2024</span>
+                    <span class="time">Hora: 10:30 AM</span>
+                    <span class="author">Autor: Juan Pérez</span>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNZfYgUM_voigA74e2VZjO0ZyjzMAjSWF0Yw&s" alt="Estrategias Digitales para el 2024">
+                <h2>Estrategias Digitales para el 2024</h2>
+                <p>Conoce las tendencias más impactantes que están definiendo el panorama digital en este año.</p>
+                <button class="btn-cta">Ver más</button>
+            </div>
+            <div class="blog-item">
+                <div class="blog-info">
+                    <span class="date">Fecha: 08/10/2024</span>
+                    <span class="time">Hora: 09:00 AM</span>
+                    <span class="author">Autor: Laura Gómez</span>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhmC1-g3Yvi3v0Lxrck9AY2pgQ793LcpVPPA&s" alt="Wix o WordPress ¿Qué plataforma web es recomendable para mi negocio?">
+                <h2>Wix o WordPress ¿Qué plataforma web es recomendable para mi negocio?</h2>
+                <p>Conoce la diferencia entre una plataforma CMS de código abierto y una plataforma que provee herramientas de contenidos de terceros.</p>
+                <button class="btn-cta">Ver más</button>
+            </div>
+            <div class="blog-item">
+                <div class="blog-info">
+                    <span class="date">Fecha: 05/10/2024</span>
+                    <span class="time">Hora: 04:15 PM</span>
+                    <span class="author">Autor: Andrés Martínez</span>
+                </div>
+                <img src="https://disete.com/wp-content/uploads/2023/08/beneficios-de-la-virtualizacion.png" alt="¿Qué es la virtualización y cómo puedo trabajar en mi laboratorio web?">
+                <h2>¿Qué es la virtualización y cómo puedo trabajar en mi laboratorio web?</h2>
+                <p>Conoce la solución perfecta para crear servidores web con Microsoft Azure y AWS.</p>
+                <button class="btn-cta">Ver más</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="parallax-section">
+        <h2>Cuéntanos sobre tu proyecto</h2>
+        <form id="contact-form">
+            <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+            <input type="tel" name="telefono" placeholder="+57 Número de Contacto" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <input type="text" name="pais" placeholder="País" required>
+            <input type="text" name="ciudad" placeholder="Ciudad" required>
+            <textarea name="mensaje" placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Digiticol - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
